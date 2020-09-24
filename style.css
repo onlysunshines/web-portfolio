@@ -56,6 +56,24 @@ footer {
     align-items: center;
 }
 
+/* anchor tag styling will be the same for all links */
+
+a:hover {
+    color: purple;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:active {
+    color: turquoise;
+}
+
 /* all of my classes */
 
 .firstSection {
