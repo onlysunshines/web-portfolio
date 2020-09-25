@@ -122,24 +122,12 @@ main li {
 		margin-left: 25%;
 		margin-right: 25%;
 }
-@media only screen and (max-width: 600px) {
-	.pAbout {
-		width: 90%;
-	}
-}
 
 /* not so rough around those edges huh */
 
 .image {
 	border-radius: 15px;
 }
-
-@media only screen and (max-width: 600px) {
-	.image {
-		width: 90%;
-	}
-}
-
 
 
 /* this is my in-page contact link */
