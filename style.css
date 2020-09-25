@@ -40,7 +40,7 @@ header {
     background-color: rgba(199, 108, 5, 0.781);
     align-items: center;
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 /* the copyright symbol is a nice touch */
@@ -52,7 +52,7 @@ footer {
     background: rgb(94, 42, 0);
     height: 30px;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     align-items: center;
 }
 
@@ -75,6 +75,14 @@ a:active {
 }
 
 /* all of my classes */
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+main li {
+	text-align: center;
+}
 
 .firstSection {
     text-align: center;
@@ -110,16 +118,31 @@ a:active {
 }
 
 .pAbout {
-    margin-left: 500px;
-    margin-right: 500px;
-    text-align: center;
+    /* margin-left: 500px;
+    margin-right: 500px; */
+		text-align: center;
+		width: 500px;
+		margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+	.pAbout {
+		width: 90%;
+	}
 }
 
 /* not so rough around those edges huh */
 
 .image {
-    border-radius: 15px;
+	border-radius: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+	.image {
+		width: 90%;
+	}
+}
+
+
 
 /* this is my in-page contact link */
 
