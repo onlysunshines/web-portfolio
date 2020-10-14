@@ -36,24 +36,81 @@ body {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 10%;
     background-color: rgba(199, 108, 5, 0.781);
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+header nav ul li a.hover {
+    color: lightgrey;
+}
+
+p {
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+div .about img {
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* the copyright symbol is a nice touch */
 
 footer {
     color: wheat;
-    margin: 0;
+    margin-right: 20px;
     font-size: 20px;
     background: rgb(94, 42, 0);
-    height: 30px;
-    width: 100%;
-    padding: 20px;
+    height: 5%;
+    width: 97%;
+    padding: 15px;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#copy {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 hr {
@@ -69,22 +126,30 @@ a:hover {
 }
 
 a:link {
-    color: blue;
+    color: black;
 }
 
 a:visited {
-    color: darkblue;
+    color: maroon;
 }
 
 a:active {
-    color: turquoise;
+    color: teal;
 }
 
+header nav ul li a {
+    color: white;
+}
+
+#welcome {
+    padding: 20px;
+}
 /* all of my classes */
 
 .firstSection {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .future {
@@ -102,7 +167,7 @@ a:active {
 }
 
 .aboutWords {
-    text-align: left;
+    text-align: center;
     display: inline-block;
 }
 
@@ -121,14 +186,232 @@ a:active {
     text-align: center;
 }
 
+#aboutPhoto {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+div .aboutPhoto {
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+}
+
 /* not so rough around those edges huh */
+
+img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#cs {
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+ul {
+    align-items: left;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#ole {
+    text-align: left;
+    padding-left: 20px;
+    color: black;
+}
+
+#link {
+    color: black;
+}
+
+#stooodster {
+    width: 750px;
+    padding-left: 10px;
+}
 
 .image {
     border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* this is my in-page contact link */
 
 #contactMe{
-    text-align: center;
+    text-align: left;
 }
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 99%;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 30px 15px 30px;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 15px 30px;
+    text-align: left;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 15px 30px;
+    text-align: left;
+}
+
+#button {
+    text-align: center;
+    width: 40px;
+    margin-left: 30px;
+}
+
+
+#cozy {
+    color: blueviolet
+}
+
+textarea {
+    height: 80px;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 414px) {
+
+    html {
+        width: 100%;
+        margin: 0;
+    }
+
+    body {
+        width: 150%;
+    }
+
+    p {
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.4em;
+        padding: 0 30px;
+    }
+
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    section {
+      padding: 0 10%;
+    }
+
+    header {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    div.firstSection{
+        margin-bottom: 0;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    .group {
+      flex-direction: column;
+    }
+
+    .firstSection {
+        width: 110%;
+    }
+
+    .about {
+        text-align: left;
+        padding: 0px;
+        margin-top: 15px;
+    }
+
+    .aboutPhoto img {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #stooodster {
+        width: 500px;
+        padding-right: 10px;
+    }
+
+    div .aboutPhoto {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    a {
+        font-size: 25px;
+    }
+
+    #sugar {
+        margin: 15px;
+        width: 525px;
+    }
+
+    footer {
+        width: 95%;
+    }
+
+    #button {
+        font-size: 20px;
+        width: 60px;
+        text-align: center;
+    }
+
+    ul {
+        font-size: 22px;
+    }
+
+    #cozy {
+        color: blueviolet
+    }
+
+    form {
+        font-size: 25px;
+    }
+  }
