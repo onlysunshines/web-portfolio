@@ -212,8 +212,8 @@ img {
 }
 
 #cs {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     border-radius: 15px;
 }
 
@@ -236,6 +236,9 @@ ul {
 #stooodster {
     width: 750px;
     padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
